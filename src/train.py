@@ -32,7 +32,7 @@ def load_data(data_path):
     processed_images = [preprocess(image) for image in raw_images]
     data = np.concatenate(processed_images, axis=0)
     return data, labels
-
+    
 
 def main(repo_path):
     train_csv_path = repo_path / "data/prepared/train.csv"
